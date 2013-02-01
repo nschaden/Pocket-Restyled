@@ -1,0 +1,110 @@
+/* Pocket Restyled - main
+ *
+ * Default styling for reading pages on Pocket.
+ *
+ * Applicable patterns:
+ * *getpocket.com/*read*
+ * 
+ * Contents:
+ * Global
+ * Queue
+ * Reading
+ * Overlay
+ */
+
+/*=Global
+--------------------------------------------------------------------------------------- */
+#PKT_header + #page.show_footer,
+#page.show_footer .nav,
+#page.show_footer footer {
+  display: block !important;
+}
+
+/*=Queue
+--------------------------------------------------------------------------------------- */
+.queue_list .active {
+  -webkit-box-shadow: 0 0 3px #181300;
+  -moz-box-shadow: 0 0 3px #181300;
+  box-shadow: 0 0 3px #181300;
+}
+
+/*=Reading
+--------------------------------------------------------------------------------------- */
+#page_reader {
+	background: #f8f8f8 !important;
+}
+#page_reader[skin="night"] {
+	background: #131313 !important;
+  border-color: #131313 !important;
+}
+.reader_content {
+	color: #232323 !important;
+}
+#page_reader[skin="night"] .reader_content {
+	color: #878787 !important;
+}
+#page_render[skin="night"] .text_body a {
+	color: #BABACC !important;
+}
+#page_reader[font="serif"] .reader_content {
+	font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif !important;
+}
+#page_reader[font="sans"] .reader_content {
+	font-family: 'Proxima Nova','Helvetica Neue',helvetica,arial,sans-serif !important;
+}
+
+/*=Overlay
+--------------------------------------------------------------------------------------- */
+#help_screen {
+  -moz-opacity: 0.20;
+  background: #000;
+  display: none;
+  filter:alpha(opacity=20);
+  height: 100%;
+  left: -1000px;
+  opacity: 0.2;
+  position: absolute;
+  top: 0;
+  width: 10000px;
+  z-index: 1005;
+}
+#help_overlay {
+  background: #f8f8f8;
+  border: 1px solid #dedede;
+  display: none;
+  font-family: 'helvetica neue',helvetica,arial,sans-serif; 
+  height: 500px;
+  left: 0;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 20px !important;
+  position: absolute;
+  width: 450px;
+  top: 70px;
+  z-index: 2000;
+}
+#help_overlay h2 {
+  font-size: 24px;
+  margin-bottom: 1em !important;
+}
+#help_overlay h3 {
+  display: block;
+  margin: 1em 0 0.5em;
+  position: relative;
+}
+#help_overlay ul {
+  list-style-type: none;
+}
+#help_overlay li {
+  display: block !important;
+  font-size: 14px !important;
+  margin: 0.05em 0 !important;
+  padding: 0.5em 1em !important;
+  text-align: left;
+}
+#help_overlay li > span {
+  display: inline-block !important;
+  margin-right: 20px !important;
+  width: 20px !important;
+  text-align: right !important;
+}
