@@ -2,7 +2,7 @@
 
 A revised Pocket. Palatino, Proxima Nova, softer colors, more white space and keyboard shortcuts.
 
-Version: 0.4 (beta)
+Version: 0.5 (beta)
 Original Author: Nick Schaden
 http://nickschaden.com
 

@@ -393,11 +393,10 @@ Pocket =
   }
   else if (document.location.href.indexOf('/read') > -1)
   {
-    $('#pagenav_back').click(function()
+    $('#pagenav_back,#pagenav_mark').click(function()
     {
       if (typeof(localStorage) == 'object')
         localStorage.setItem('pocket_fromreadarticle','1');
-      $('body').removeClass('night');
       var queueCheck = setInterval(function()
       {
         if ($('#queue').length && !$('#queue_list_wrapper').hasClass('loading'))
